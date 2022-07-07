@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
