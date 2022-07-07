@@ -30,6 +30,6 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build
-        run: yarn build
+        run: yarn build --production
       - name: Deploy
         run: aws s3 sync ./build s3://news-archive-client
